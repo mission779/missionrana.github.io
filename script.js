@@ -1,34 +1,23 @@
 const year = document.getElementById("year");
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+if (year) year.textContent = new Date().getFullYear();
 
-const navToggle = document.querySelector(".nav-toggle");
+const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener("click", () => {
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
 
-  document.querySelectorAll(".nav-links a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("active");
-    });
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => navLinks.classList.remove("active"));
   });
 }
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  },
-  { threshold: 0.14 }
-);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("visible");
+  });
+}, { threshold: 0.12 });
 
-document.querySelectorAll(".reveal").forEach((element) => {
-  observer.observe(element);
-});
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
