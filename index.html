@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mission Rana — IT Support Technician, Service Desk Analyst, and Desktop Support portfolio based in Calgary, AB." />
+  <meta name="description" content="Mission Rana — IT Support Technician portfolio featuring technical support experience, Microsoft 365, Active Directory, networking, cloud, and infrastructure projects." />
+  <meta property="og:title" content="Mission Rana | IT Support Portfolio" />
+  <meta property="og:description" content="IT Support Technician portfolio showcasing support experience, certifications, and technical projects." />
+  <meta property="og:type" content="website" />
   <title>Mission Rana | IT Support Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header class="site-header">
-    <nav class="nav container">
-      <a class="logo" href="#home">Mission<span>.</span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="logo" href="#home">Mission Rana</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -28,345 +30,148 @@
   </header>
 
   <main>
-
-    <!-- HERO -->
     <section id="home" class="hero">
-      <div class="hero-bg"></div>
-      <div class="container">
-        <div class="hero-content">
-          <p class="hero-eyebrow">Calgary, AB · Available for Work</p>
-          <h1>Mission<br><em>Rana</em></h1>
-          <p class="hero-sub">IT Support Technician focused on troubleshooting, user support, and reliable service delivery.</p>
-          <p class="hero-role">Service Desk · Help Desk · Desktop Support · IT Support</p>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content fade-up visible">
+          <p class="eyebrow">Calgary, AB · Open to IT Support Roles</p>
+          <h1>IT Support Technician focused on reliable user support.</h1>
+          <p class="hero-sub">SAIT Information Technology graduate with hands-on experience in technical support, Microsoft 365, Active Directory, networking, endpoint troubleshooting, and service desk operations.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#contact">Get in touch</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/mission-rana/" target="_blank" rel="noopener">LinkedIn ↗</a>
-            <a class="btn ghost" href="Mission_Rana_Resume.pdf" target="_blank">Resume PDF</a>
+            <a class="btn primary" href="#contact">Contact Me</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/mission-rana/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <div class="quick-points" aria-label="Portfolio highlights">
+            <span>CompTIA A+</span>
+            <span>Network+</span>
+            <span>CIOS</span>
+            <span>Microsoft 365</span>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="avatar"><img src="profile.jpg" alt="Mission Rana" /></div>
-          <h3>IT Support Technician</h3>
-          <p class="sub">SAIT Graduate · Calgary, AB</p>
-          <div class="cert-badges">
-            <span class="badge">CompTIA A+</span>
-            <span class="badge">Network+</span>
-            <span class="badge">CIOS</span>
-            <span class="badge">Google IT</span>
+
+        <aside class="profile-card fade-up visible" aria-label="Profile summary">
+          <img src="profile.jpg" alt="Mission Rana professional profile photo" class="profile-photo" />
+          <h2>Mission Rana</h2>
+          <p>Service Desk · Help Desk · Desktop Support</p>
+          <div class="card-stats">
+            <div><strong>6</strong><span>Credentials</span></div>
+            <div><strong>5+</strong><span>Projects</span></div>
+            <div><strong>3.51</strong><span>SAIT GPA</span></div>
           </div>
-          <div class="stat-row">
-            <div class="stat"><span class="num">2+</span><span class="lbl">Years Experience</span></div>
-            <div class="stat"><span class="num">6</span><span class="lbl">Certifications</span></div>
-            <div class="stat"><span class="num">7</span><span class="lbl">Projects</span></div>
-            <div class="stat"><span class="num">3.51</span><span class="lbl">GPA at SAIT</span></div>
-          </div>
-        </div>
+        </aside>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section">
-      <div class="container">
-        <div class="about-grid">
-          <div>
-            <p class="section-tag">About</p>
-            <h2 class="section-title">Practical IT support with real-world impact.</h2>
-            <div class="about-photo-wrap">
-              <img src="profile.jpg" alt="Mission Rana" class="about-photo" />
-              <div class="about-photo-label">Mission Rana · Calgary, AB</div>
-            </div>
-          </div>
-          <div class="about-text fade-up">
-            <p>I'm an <strong>IT graduate from SAIT</strong> with hands-on experience supporting Windows environments, Microsoft 365, networking fundamentals, endpoint devices, and user-facing technical issues.</p>
-            <p>My background spans <strong>onsite IT support with Compugen</strong> during City of Calgary election operations — a high-demand, time-sensitive environment where reliability matters — an IT support internship in Nepal, and extensive academic projects.</p>
-            <p>I thrive in fast-paced support environments where I can solve real problems for real people, and I document everything so the next person has a smoother ride.</p>
-            <div class="highlight-box">
-              Currently targeting: <strong style="color:var(--text)">Service Desk Analyst · Help Desk Technician · Desktop Support · IT Support Technician</strong> roles in the Calgary area.
-            </div>
-          </div>
+      <div class="container split">
+        <div>
+          <p class="section-tag">About</p>
+          <h2 class="section-title">Practical support skills with a user-first mindset.</h2>
+        </div>
+        <div class="content-card fade-up">
+          <p>I am an IT graduate from Southern Alberta Institute of Technology with practical experience supporting Windows environments, Microsoft 365, networking fundamentals, endpoint devices, and user-facing technical issues.</p>
+          <p>My professional experience includes onsite IT support with Compugen during City of Calgary election operations, where reliability, documentation, and quick troubleshooting were essential.</p>
+          <p>I am currently targeting Service Desk Analyst, Help Desk Technician, Desktop Support, and IT Support Technician roles in Calgary.</p>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section skills-section">
+    <section id="skills" class="section alt">
       <div class="container">
         <p class="section-tag">Technical Skills</p>
-        <h2 class="section-title">What I bring to the table.</h2>
+        <h2 class="section-title">Core areas I can support.</h2>
         <div class="skills-grid">
-          <div class="skill-card fade-up">
-            <div class="skill-icon">🎯</div>
-            <h3>Help Desk & Support</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Technical Support</span>
-              <span class="skill-tag">Incident Management</span>
-              <span class="skill-tag">Troubleshooting</span>
-              <span class="skill-tag">ServiceNow</span>
-              <span class="skill-tag">Jira</span>
-              <span class="skill-tag">Remote Support</span>
-              <span class="skill-tag">Escalation</span>
-            </div>
-          </div>
-          <div class="skill-card fade-up">
-            <div class="skill-icon">☁️</div>
-            <h3>Microsoft Environment</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Microsoft 365</span>
-              <span class="skill-tag">Active Directory</span>
-              <span class="skill-tag">Entra ID</span>
-              <span class="skill-tag">Intune</span>
-              <span class="skill-tag">Teams</span>
-              <span class="skill-tag">SharePoint</span>
-              <span class="skill-tag">User Management</span>
-            </div>
-          </div>
-          <div class="skill-card fade-up">
-            <div class="skill-icon">💻</div>
-            <h3>Hardware & Devices</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">PCs & Laptops</span>
-              <span class="skill-tag">Device Imaging</span>
-              <span class="skill-tag">Deployment</span>
-              <span class="skill-tag">YubiKeys</span>
-              <span class="skill-tag">GNSS Devices</span>
-              <span class="skill-tag">Cradlepoint Routers</span>
-            </div>
-          </div>
-          <div class="skill-card fade-up">
-            <div class="skill-icon">🌐</div>
-            <h3>Networking</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">TCP/IP</span>
-              <span class="skill-tag">DNS & DHCP</span>
-              <span class="skill-tag">VPN</span>
-              <span class="skill-tag">VLANs</span>
-              <span class="skill-tag">LAN/WLAN</span>
-              <span class="skill-tag">Routing</span>
-            </div>
-          </div>
-          <div class="skill-card fade-up">
-            <div class="skill-icon">🖥️</div>
-            <h3>Systems & Platforms</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Windows 10/11</span>
-              <span class="skill-tag">Windows Server</span>
-              <span class="skill-tag">Linux</span>
-              <span class="skill-tag">macOS</span>
-              <span class="skill-tag">VMware</span>
-              <span class="skill-tag">Hyper-V</span>
-            </div>
-          </div>
-          <div class="skill-card fade-up">
-            <div class="skill-icon">⚙️</div>
-            <h3>Scripting & Automation</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">PowerShell</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Ansible</span>
-              <span class="skill-tag">Terraform</span>
-              <span class="skill-tag">Bash</span>
-              <span class="skill-tag">IaC</span>
-            </div>
-          </div>
+          <article class="skill-card fade-up"><h3>Help Desk & Support</h3><p>Technical support, ticketing, incident management, troubleshooting, escalation procedures, documentation, ServiceNow, Jira, remote support.</p></article>
+          <article class="skill-card fade-up"><h3>Microsoft Environment</h3><p>Microsoft 365, Active Directory, Entra ID, user account management, password resets, access control, Teams, SharePoint, Intune fundamentals.</p></article>
+          <article class="skill-card fade-up"><h3>Endpoint & Hardware</h3><p>Windows 10/11, laptops, desktops, peripherals, printers, device setup, imaging, deployment, YubiKeys, GNSS devices, Cradlepoint routers.</p></article>
+          <article class="skill-card fade-up"><h3>Networking</h3><p>TCP/IP, DNS, DHCP, VPN, LAN/WLAN, VLANs, routers, switches, wireless troubleshooting, connectivity support.</p></article>
+          <article class="skill-card fade-up"><h3>Systems & Virtualization</h3><p>Windows Server, Linux Ubuntu/Red Hat, macOS, VMware, Hyper-V, VirtualBox, lab-based server administration.</p></article>
+          <article class="skill-card fade-up"><h3>Scripting & Automation</h3><p>PowerShell basics, Python basics, Bash fundamentals, Ansible, Terraform, Infrastructure as Code concepts.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="container">
         <p class="section-tag">Experience</p>
-        <h2 class="section-title">Where I've made a difference.</h2>
+        <h2 class="section-title">Relevant IT support experience.</h2>
         <div class="timeline">
-
-          <div class="timeline-item fade-up">
-            <div class="timeline-left">
-              <span class="timeline-date">Oct 2025</span>
-              <span class="timeline-type">Contract</span>
-            </div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-right">
-              <h3>IT Support Technician</h3>
-              <span class="company">Compugen Inc. · City of Calgary Elections · Calgary, AB</span>
+          <article class="timeline-item fade-up">
+            <div class="timeline-date">Oct 2025</div>
+            <div class="timeline-content">
+              <h3>IT Support Technician — Compugen Inc.</h3>
+              <p class="company">City of Calgary Elections · Calgary, AB</p>
               <ul>
-                <li>Provided onsite IT support for end users during high-demand election operations — zero tolerance for downtime.</li>
-                <li>Configured and deployed Cradlepoint routers, YubiKeys, and GNSS devices to ensure secure connectivity across polling sites.</li>
-                <li>Performed workstation setup, device imaging, peripheral support, and VPN troubleshooting under time pressure.</li>
-                <li>Logged and documented every incident with full troubleshooting steps; followed escalation procedures to maintain continuity.</li>
-                <li>Collaborated with cross-functional IT teams to resolve technical issues and improve system performance.</li>
+                <li>Provided onsite IT support for end users during high-demand election operations.</li>
+                <li>Configured and deployed Cradlepoint routers, YubiKeys, and GNSS devices for secure connectivity.</li>
+                <li>Performed workstation setup, device imaging, peripheral support, and VPN troubleshooting.</li>
+                <li>Logged incidents, documented troubleshooting steps, and followed escalation procedures.</li>
               </ul>
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-item fade-up">
-            <div class="timeline-left">
-              <span class="timeline-date">Jan – Apr 2023</span>
-              <span class="timeline-type">Internship</span>
-            </div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-right">
-              <h3>IT Support Technician Intern</h3>
-              <span class="company">Nepal World Education Network · Pokhara, Nepal</span>
+          <article class="timeline-item fade-up">
+            <div class="timeline-date">Jan–Apr 2023</div>
+            <div class="timeline-content">
+              <h3>IT Support Technician Intern — Nepal World Education Network</h3>
+              <p class="company">Pokhara, Nepal</p>
               <ul>
-                <li>Delivered technical support for hardware, software, and network connectivity issues across the organization.</li>
-                <li>Managed user accounts, password resets, and access permissions in directory-based environments.</li>
-                <li>Supported Microsoft Office applications and business systems, improving user productivity.</li>
-                <li>Maintained IT documentation and tracked incidents using established service desk processes.</li>
+                <li>Delivered technical support for hardware, software, and network connectivity issues.</li>
+                <li>Managed user accounts, password resets, and access permissions.</li>
+                <li>Supported Microsoft Office applications and maintained IT documentation.</li>
               </ul>
             </div>
-          </div>
-
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section" style="background: var(--surface2);">
+    <section id="projects" class="section alt">
       <div class="container">
         <p class="section-tag">Projects</p>
-        <h2 class="section-title">Academic & technical projects.</h2>
+        <h2 class="section-title">Technical projects that show hands-on capability.</h2>
         <div class="project-grid">
-
-          <article class="project-card fade-up">
-            <p class="project-num">01 / WLAN</p>
-            <h3>WLAN Design & Validation for Educational Institute</h3>
-            <p>Designed a secure high-density wireless network for an educational environment. Performed predictive RF surveys using ExtremeCloud IQ and TamoSoft. Configured RADIUS authentication, captive portal, and QoS for real-time voice and video traffic.</p>
-            <div class="tag-row">
-              <span class="tag">WLAN</span><span class="tag">RADIUS</span><span class="tag">QoS</span><span class="tag">RF Survey</span><span class="tag">ExtremeCloud IQ</span>
-            </div>
-          </article>
-
-          <article class="project-card fade-up">
-            <p class="project-num">02 / CLOUD</p>
-            <h3>Azure Hybrid Cloud Transformation</h3>
-            <p>Designed a Microsoft Azure hybrid cloud solution for a simulated academic institution. Built architecture diagrams covering Entra ID, networking, RBAC, and policy controls. Deployed IaaS services including VMs, storage, monitoring, and backups.</p>
-            <div class="tag-row">
-              <span class="tag">Azure</span><span class="tag">Entra ID</span><span class="tag">RBAC</span><span class="tag">IaaS</span><span class="tag">Docker</span>
-            </div>
-          </article>
-
-          <article class="project-card fade-up">
-            <p class="project-num">03 / NETWORK</p>
-            <h3>Network Design & Configuration</h3>
-            <p>Designed and configured a small business network using VLANs, DHCP, DNS, EIGRP, OSPF, NAT, and ACLs in Cisco Packet Tracer. Applied IP subnetting, routing protocols, and thorough documentation.</p>
-            <div class="tag-row">
-              <span class="tag">VLANs</span><span class="tag">OSPF</span><span class="tag">EIGRP</span><span class="tag">DNS</span><span class="tag">Packet Tracer</span>
-            </div>
-          </article>
-
-          <article class="project-card fade-up">
-            <p class="project-num">04 / SYSADMIN</p>
-            <h3>Windows & Linux Server Deployment</h3>
-            <p>Configured Windows Server with Active Directory, DHCP, file services, and group policies for a virtual organization. Installed and administered a Linux server with user accounts, file sharing, and Bash scripting automation.</p>
-            <div class="tag-row">
-              <span class="tag">AD DS</span><span class="tag">Windows Server</span><span class="tag">Linux</span><span class="tag">GPO</span><span class="tag">Bash</span>
-            </div>
-          </article>
-
-          <article class="project-card fade-up">
-            <p class="project-num">05 / AUTOMATION</p>
-            <h3>Infrastructure Automation (Ansible & Terraform)</h3>
-            <p>Developed Ansible playbooks to automate configuration of Linux and Windows servers — user creation, service updates, app deployments. Provisioned Azure infrastructure via Terraform IaC with reusable modules and state management.</p>
-            <div class="tag-row">
-              <span class="tag">Ansible</span><span class="tag">Terraform</span><span class="tag">IaC</span><span class="tag">Azure</span><span class="tag">YAML</span>
-            </div>
-          </article>
-
-          <article class="project-card fade-up">
-            <p class="project-num">06 / VMWARE</p>
-            <h3>vSphere Storage & Networking</h3>
-            <p>Deployed a multi-host VMware vSphere environment simulating on-premises to cloud-ready infrastructure. Configured distributed virtual switches, iSCSI shared storage, vMotion for live VM migration, and validated network failover.</p>
-            <div class="tag-row">
-              <span class="tag">VMware vSphere</span><span class="tag">iSCSI</span><span class="tag">vMotion</span><span class="tag">VLANs</span><span class="tag">ESXi</span>
-            </div>
-          </article>
-
+          <article class="project-card fade-up"><span>01</span><h3>WLAN Design & Validation</h3><p><strong>Goal:</strong> Design secure wireless coverage for an educational environment.</p><p><strong>Work:</strong> Used ExtremeCloud IQ and TamoSoft for predictive RF planning, RADIUS, captive portal, and QoS design.</p><div class="tags"><small>WLAN</small><small>RADIUS</small><small>QoS</small><small>RF Survey</small></div></article>
+          <article class="project-card fade-up"><span>02</span><h3>Azure Hybrid Cloud</h3><p><strong>Goal:</strong> Build a scalable cloud design for a simulated academic institution.</p><p><strong>Work:</strong> Designed architecture covering Entra ID, RBAC, VMs, storage, monitoring, backup, and policy controls.</p><div class="tags"><small>Azure</small><small>Entra ID</small><small>RBAC</small><small>IaaS</small></div></article>
+          <article class="project-card fade-up"><span>03</span><h3>Network Design & Configuration</h3><p><strong>Goal:</strong> Build a small-business network in Cisco Packet Tracer.</p><p><strong>Work:</strong> Configured VLANs, DHCP, DNS, routing protocols, NAT, ACLs, and IP subnetting.</p><div class="tags"><small>VLANs</small><small>OSPF</small><small>EIGRP</small><small>ACLs</small></div></article>
+          <article class="project-card fade-up"><span>04</span><h3>Windows & Linux Server Deployment</h3><p><strong>Goal:</strong> Deploy core server services in a lab environment.</p><p><strong>Work:</strong> Configured AD DS, DHCP, file services, Group Policy, Linux user accounts, and file sharing.</p><div class="tags"><small>AD DS</small><small>GPO</small><small>Linux</small><small>DHCP</small></div></article>
+          <article class="project-card fade-up"><span>05</span><h3>Infrastructure Automation</h3><p><strong>Goal:</strong> Reduce manual configuration and improve consistency.</p><p><strong>Work:</strong> Created Ansible playbooks and Terraform templates for Linux, Windows, and Azure infrastructure.</p><div class="tags"><small>Ansible</small><small>Terraform</small><small>IaC</small><small>Azure</small></div></article>
         </div>
+        <p class="note">Next improvement: add screenshots or diagrams for each project, with sensitive details removed.</p>
       </div>
     </section>
 
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="section certs-section">
+    <section id="certifications" class="section">
       <div class="container">
         <p class="section-tag">Certifications & Education</p>
-        <h2 class="section-title">Credentials that back the work.</h2>
+        <h2 class="section-title">Credentials and training.</h2>
         <div class="cert-grid">
-          <div class="cert-card fade-up">
-            <div class="cert-icon">🏆</div>
-            <div class="cert-info">
-              <h3>CompTIA Network+</h3>
-              <p>CompTIA · Issued Feb 2026</p>
-            </div>
-          </div>
-          <div class="cert-card fade-up">
-            <div class="cert-icon">🏅</div>
-            <div class="cert-info">
-              <h3>CompTIA IT Operations Specialist (CIOS)</h3>
-              <p>CompTIA · Issued Feb 2026</p>
-            </div>
-          </div>
-          <div class="cert-card fade-up">
-            <div class="cert-icon">🏆</div>
-            <div class="cert-info">
-              <h3>CompTIA A+</h3>
-              <p>CompTIA · Issued Oct 2025</p>
-            </div>
-          </div>
-          <div class="cert-card fade-up">
-            <div class="cert-icon">🎓</div>
-            <div class="cert-info">
-              <h3>Google IT Support Professional Certificate</h3>
-              <p>Google · Issued Jun 2025</p>
-            </div>
-          </div>
-          <div class="cert-card fade-up">
-            <div class="cert-icon">🌐</div>
-            <div class="cert-info">
-              <h3>Enterprise Networking, Security & Automation</h3>
-              <p>Cisco Networking Academy · Jan 2025</p>
-            </div>
-          </div>
-          <div class="cert-card fade-up">
-            <div class="cert-icon">📘</div>
-            <div class="cert-info">
-              <h3>Diploma in Information Technology Services</h3>
-              <p>SAIT · GPA 3.51 · Apr 2025</p>
-            </div>
-          </div>
+          <article class="cert-card fade-up"><h3>CompTIA Network+</h3><p>Issued Feb 2026</p></article>
+          <article class="cert-card fade-up"><h3>CompTIA IT Operations Specialist (CIOS)</h3><p>Issued Feb 2026</p></article>
+          <article class="cert-card fade-up"><h3>CompTIA A+</h3><p>Issued Oct 2025</p></article>
+          <article class="cert-card fade-up"><h3>Google IT Support Professional Certificate</h3><p>Issued Jun 2025</p></article>
+          <article class="cert-card fade-up"><h3>Enterprise Networking, Security & Automation</h3><p>Cisco Networking Academy · Jan 2025</p></article>
+          <article class="cert-card fade-up"><h3>Diploma in Information Technology Services</h3><p>SAIT · GPA 3.51 · Apr 2025</p></article>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section contact-section">
-      <div class="container">
-        <div class="contact-inner">
-          <p class="section-tag" style="justify-content:center">Contact</p>
-          <h2>Let's work<br><span>together.</span></h2>
-          <p>Open to IT Support Technician, Service Desk Analyst, Help Desk Technician, and Desktop Support opportunities in Calgary, AB.</p>
-          <div class="contact-links">
-            <a class="contact-chip" href="mailto:missionmgr779@gmail.com">
-              <span class="icon">✉️</span> missionmgr779@gmail.com
-            </a>
-            <a class="contact-chip" href="https://www.linkedin.com/in/mission-rana/" target="_blank" rel="noopener">
-              <span class="icon">💼</span> LinkedIn Profile
-            </a>
-            <a class="contact-chip" href="Mission_Rana_Resume.pdf" target="_blank">
-              <span class="icon">📄</span> Download Resume
-            </a>
-          </div>
+      <div class="container contact-inner">
+        <p class="section-tag center">Contact</p>
+        <h2>Let's connect.</h2>
+        <p>Open to IT Support Technician, Service Desk Analyst, Help Desk Technician, and Desktop Support opportunities in Calgary, AB.</p>
+        <div class="contact-links">
+          <a href="mailto:missionmgr779@gmail.com">missionmgr779@gmail.com</a>
+          <a href="https://www.linkedin.com/in/mission-rana/" target="_blank" rel="noopener">LinkedIn Profile</a>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Mission Rana · Built for IT Support and Service Desk opportunities</p>
-    </div>
+    <div class="container">© <span id="year"></span> Mission Rana · IT Support Portfolio</div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
